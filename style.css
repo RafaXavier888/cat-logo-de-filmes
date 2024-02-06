@@ -78,8 +78,9 @@ body {
   
   .synopsis {
     overflow: hidden;
-    max-height: 80px;  
+    max-height: 200px;  
     position: relative;
+    overflow-y: auto; 
   }
 
   .show-more {
