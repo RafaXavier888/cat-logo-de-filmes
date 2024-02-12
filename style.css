@@ -31,7 +31,7 @@ body {
   }
 
   button {
-    background-color: rgba(255, 215, 0, 0.7); 
+    background-color: rgb(81 81 81 / 70%);
     color: #fff;
     border: none;
     border-radius: 8px;
