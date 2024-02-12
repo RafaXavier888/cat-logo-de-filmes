@@ -55,7 +55,7 @@ body {
   }
   
   .movie-card {
-    background-color: rgba(255, 215, 0, 0.7);
+    background-color: rgb(81 81 81 / 70%);
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
