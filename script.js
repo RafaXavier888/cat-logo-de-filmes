@@ -1,16 +1,18 @@
-// Função para mostrar apenas os filmes do gênero selecionado
 function showGenre(genre) {
-  // Seleciona todos os cartões de filme
-  var movieCards = document.querySelectorAll('.movie-card');
-  // Itera sobre os cartões de filme
-  movieCards.forEach(function(card) {
-      // Verifica se o filme pertence ao gênero selecionado
-      if (card.innerText.toLowerCase().includes(genre.toLowerCase())) {
-          // Mostra o cartão de filme se pertencer ao gênero
-          card.style.display = 'block';
+    // seleciona todos os elementos da classe "movie-cards"
+    var movies = document.getElementsByClassName("movie-card");
+    // percorre todos os elementos
+    for (var i = 0; i < movies.length; i++) {
+      // obtém a lista de gêneros do elemento
+      var genres = movies[i].getAttribute("data-genre").split(",");
+      // verifica se o gênero passado como parâmetro está na lista
+      if (genres.includes(genre)) {
+        // se sim, mostra o elemento
+        movies[i].style.display = "block";
       } else {
-          // Oculta o cartão de filme se não pertencer ao gênero
-          card.style.display = 'none';
+        // se não, esconde o elemento
+        movies[i].style.display = "none";
       }
-  });
-}
+    }
+  }
+  
